@@ -1,0 +1,118 @@
+.landing {
+  height: 100vh;
+}
+.landing video {
+  min-width: 1600px;
+  position: absolute;
+  top: 0;
+}
+.landing h1 {
+  font-size: 140px;
+}
+.landing .over,
+.landing .under {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+}
+.landing .over {
+  align-items: flex-end;
+}
+.landing .over h1 {
+  color: blue;
+  margin-bottom: -47.5px;
+  mix-blend-mode: darken;
+  z-index: 100;
+}
+.landing .under {
+  background-color: blue;
+  color: white;
+  mix-blend-mode: darken;
+}
+.landing .under h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 140px;
+  margin-top: -33px;
+}
+.range .accordian {
+  height: 420px;
+  display: flex;
+}
+.range .accordian .item {
+  background-color: #666;
+  display: flex;
+  flex: 1;
+  position: relative;
+  transition: 0.7s cubic-bezier(0.79, 0.01, 0.2, 1);
+  z-index: 1;
+}
+.range .accordian .item .bg {
+  background-position: top center;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.3s ease;
+  z-index: -1;
+}
+.range .accordian .item .bg1 {
+  background-image: url('../../media/images/shark.jpg');
+}
+.range .accordian .item .bg2 {
+  background-image: url('../../media/images/betta.jpg');
+}
+.range .accordian .item .bg3 {
+  background-image: url('../../media/images/gourami.jpg');
+}
+.range .accordian .item .bg4 {
+  background-image: url('../../media/images/angel.jpg');
+}
+.range .accordian .item .bg5 {
+  background-image: url('../../media/images/ram.jpg');
+}
+.range .accordian .item .content {
+  background-color: #f8f8f8;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.range .accordian .item .content .profile {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 140px;
+  opacity: 0;
+  padding: 21px;
+  text-align: center;
+  transform: translateY(70px);
+  transition: 0.7s cubic-bezier(0.79, 0.01, 0.25, 1);
+  transition-delay: 0.3s;
+}
+.range .accordian .item .content .profile img {
+  align-self: center;
+  border-radius: 50%;
+  height: auto;
+  max-width: 210px;
+  width: 20vw;
+}
+.range .accordian .item .content .profile h2 {
+  color: #666;
+  font-family: 'Bebas Neue', cursive;
+}
+.range .accordian .item .content .profile p {
+  color: #666;
+}
+.range .accordian .item:hover {
+  flex-grow: 2;
+}
+.range .accordian .item:hover .content {
+  opacity: 1;
+}
+.range .accordian .item:hover .content .profile {
+  opacity: 1;
+  transform: translateY(0);
+}
